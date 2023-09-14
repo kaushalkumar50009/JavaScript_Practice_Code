@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Form</title>
+</head>
+<body>
+    <form action="backend.js" method="get">
+        <div>
+            <label for="name"> Name: <input type="text" name="My-name" id="name" placeholder="User Name" required></label>
+        </div>
+        <br>
+        <div>
+            <label for="Password">Password: <input type="Password" name="My-password"placeholder="Password" id = "Password" required></label>
+        </div>
+        <br>
+        <div>
+            <label for="Email">Email: <input type="email" name="My-Email"placeholder="email-id" id = "Email" required></label>
+        </div>
+        <br>
+        <div>
+            <label for="Age">Age: <input type="number" name="My-age" id="Age" placeholder="Age"required></label>
+        </div>
+        <br>
+        <div>
+            <label for="Level">Passed Level: <input type="number" name="My-level" id="Level"required></label>
+        </div>
+        <br>
+        <div>
+            <label for="Date">Date: <input type="Date" name="My-Date" id="Date"required></label>
+        </div>
+        <br>
+        <div>
+            <label for="Car-Choices"> Select your available option: 
+                <select name="My-cars" id="Car-Choices">
+                    <option value="bmw"> BMW</option>
+                    <option value="ferr"> Ferrari</option>
+                    <option value="Alto"> Alto</option>
+                    <option value="Swiftt"> Swiftt</option>
+                    <option value="Bolero"> Bolero</option>
+                    <option value="nano"> Nano</option>
+                </select>
+
+            <label>
+        </div>
+        <br>
+        <div>
+            <label for="Language">Language:
+                     <select name="Language" id="" multiple >
+                    <!-- <select name="Language" id=""> -->
+                        <option value="java">java</option>
+                        <option value="js">java script</option>
+                        <option value="CPP">C++</option>
+                        <option value="PY">Python</option>
+                        <option value="html">html</option>html
+                   </select>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="Gender"> Gender:
+            
+            Male <input type="radio" name="My-gender" id="Gender">
+
+            Female <input type="radio" name="My-gender" id="Gender">
+
+            Other <input type="radio" name="My-gender" id="Gender" required> </label>
+
+        </div>
+        <br>
+        <div>
+            <label for="Knowledge"> Experience: 
+                
+                CSS <input type="checkbox" name="My-Knowledge" id="Knowledge">
+                Java <input type="checkbox" name="My-Knowledge" id="Knowledge">
+                Python <input type="checkbox" name="My-Knowledge" id="Knowledge">
+                BootStrap <input type="checkbox" name="My-Knowledge" id="Knowledge">
+                C++ <input type="checkbox" name="My-Knowledge" id="Knowledge">
+                C <input type="checkbox" name="My-Knowledge" id="Knowledge">
+                Go <input type="checkbox" name="My-Knowledge" id="Knowledge">
+                React <input type="checkbox" name="My-Knowledge" id="Knowledge" required>
+
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="Eligibility">Are you Eligible:
+                Yes <input type="radio" name="My-Eligibility" id="Knowledge">
+                No <input type="radio" name="My-Eligibility" id="Knowledge" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            About Yourself: <br> <textarea name="My-text" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="Buttom"><input type="submit" value="Submit"></label>
+            <label for="Buttom"><input type="reset" value="Reset"></label>
+        </div>
+
+    </form> 
+
+
+    
+
+
+</body>
+
+
+
+</html>
