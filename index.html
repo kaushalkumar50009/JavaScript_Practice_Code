@@ -9,66 +9,121 @@
 </head>
 
 <body>
-  <h1>hello</h1>
+  <!-- !1_SquareRoot -->
+  <div class="square_root">
+    <p>square root</p>
+    <input type="number" id="square_root">
+    <button id="print_sq_root">squareRoot</button>
+    <p id="result"></p>
+    <script src="./3_SquareRoot.js"></script>
+  </div>
 
+  <!-- !2thAreaTriangle -->
+  <div class="area_triangle">
+    <p>area triangle</p>
+    <input type="number" id="base" placeholder="base">
+    <input type="number" id="height" placeholder="height">
+    <p id="result1"></p>
+    <input type="number" id="a" placeholder="a">
+    <input type="number" id="b" placeholder="b">
+    <input type="number" id="c" placeholder="c">
+    <p id="result2"></p>
+    <button id="print_area_triangle">area_triangle</button>
+    <script src="./4thAreaTriangle.js"></script>
+  </div>
 
+  <!-- !3thSwapNumber -->
+  <div class="swap_number">
+    <p>swap numbers</p>
+    <input type="number" id="swap_a" placeholder="a">
+    <input type="number" id="swap_b" placeholder="b">
+    <p id="swap_result1"></p>
+    <input type="number" id="swap_c" placeholder="c">
+    <input type="number" id="swap_d" placeholder="d">
+    <p id="swap_result2"></p>
+    <button id="swap_number">swapNumber</button>
+    <script src="./5thSwapNumber.js"></script>
+  </div>
 
-  <!-- <script src="./1stPrint.js"></script> -->
-  <!-- <script src="./2ndAddNo.js"></script> -->
-  <!-- <script src="./3rdSquareRoot.js"></script> -->
-  <!-- <script src="./4thAreaTriangle.js"></script> -->
-  <!-- <script src="./5thSwapNumber.js"></script> -->
-
-
-  <!-- <script src="./6thKmtoMiles.js"></script>
-    <input type="number" name="" step="any" id="data"> kms
+  <!-- !4kilometers  -->
+  <div class="">
+    <p>kilometers</p>
+    <input type="number" name="" step="any" id="data"> km
     <button onclick="convert()">
-        Convert
+      Convert
     </button> miles
-    <h3 id="res"></h3> -->
-
-
-  <!-- <script src="./7thCelsToFar.js"></script>
-    <input type="number" name="celcius" id="data" step="any"> celcius
+    <h3 id="res"></h3>
+    <script src="./6thKmtoMiles.js"></script>
+  </div>
+  <!-- !5thCelsToFar -->
+  <div class="">
+    <input type="number" name="celcius" id="CelsToFar" step="any"> celcius
     <button onclick="convert()">
-        Convert
+      Convert
     </button> Fahrenheit
-    <h4 id="print"> </h4> -->
-
-
-  <!-- <script src="./8thCheckNumb.js"></script>
-    <input type="number" name=" " id="data" >
+    <h4 id="print"> </h4>
+    <script src="./7thCelsToFar.js"></script>
+  </div>
+  <!-- !6CheckPosorNeg -->
+  <div class="">
+    <p>
+      positive or negative
+    </p>
+    <input type="number" name=" " id="PosOrNeg">
     <button onclick="check()">
-        Check
-    </button> 
-    <h4 id="result"> </h4> -->
-
-
-  <!-- <script src="./9thRandomNo.js"></script>
-    <button onclick="genrandom()">
-        generate random number
-    </button> 
-    <h4 id="result"> </h4> -->
-
-
-  <!-- <script src="./10thOddEven.js"></script>
-
-  <input type="number" name=" " id="data" >
-  <input type="submit"  onclick="OddEven()" > 
-  
-    <h4 id="result"> </h4> -->
-
-
-  <!-- <script src="./11thPrimeNo.js"></script>
-<input type="number" name=" " id="data" >
-  <button onclick="primeNo()">
       Check
-  </button> 
-  <h4 id="result"> </h4> -->
+    </button>
+    <h4 id="PosorNegResult"> </h4>
+    <script src="./8thCheckNumb.js"></script>
+  </div>
+  <!-- !generate random number -->
+  <div class="">
+    <p> generate random number between 1 to 100</p>
+    <button onclick="genrandom()">
+      random number
+    </button>
+    <h4 id="randomresult"> </h4>
+    <script src="./9thRandomNo.js"></script>
+  </div>
+  <!-- !even or odd -->
+  <div class="">
+    <p>even or odd</p>
+    <input type="number" name=" " id="OddEven">
+    <input type="submit" onclick="OddEven()">
+    <h4 id="OddEvenresult"> </h4>
+    <script src="./10thOddEven.js"></script>
 
+  </div>
 
-  <!-- <script src="./12thMaxmin.js"></script> -->
-  <!-- <script src="./palindromeChecker.js"></script> -->
+  <!-- !prime number -->
+  <div class="">
+    <p>prime number</p>
+    <input type="number" name=" " id="prime">
+    <button onclick="primeNo()">
+      Check
+    </button>
+    <h4 id="primeresult"> </h4>
+    <script src="./11thPrimeNo.js"></script>
+  </div>
+  <!-- !find maximum -->
+  <div class="">
+    <p>find maximum</p>
+    <p>using if else</p>
+    <div class="ifelse" id="ifelse">
+      <input type="number" name="" value="" placeholder="Enter first no." id="firstno">
+      <input type="number" name="" value="" placeholder="Enter second no." id="secondno">
+      <input type="number" name="" value="" placeholder="Enter third no." id="thirdno">
+
+      <button onclick="check()">maximum using if else</button>
+      <p class="maxresult" id="max"></p>
+    </div>
+    <script src="./12thMaxmin.js"></script>
+  </div>
+
+  <div class="">
+    <p>palindromeChecker</p>
+    <script src="./palindromeChecker.js"></script>
+  </div>
   <!-- <script src="./countVowels.js"></script> -->
 
 

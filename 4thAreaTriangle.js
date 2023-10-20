@@ -1,18 +1,21 @@
-console.log('area of triangle')
+function ariaTriangle() {
+  let base = document.getElementById("base").value;
+  let height = document.getElementById("height").value;
+  let area = (base * height) / 2;
+  document.getElementById(
+    "result1"
+  ).innerText = `aria of ${base} and ${height} is ${area}`;
+  let aa = document.getElementById("a").value;
+  let bb = document.getElementById("b").value;
+  let cc = document.getElementById("c").value;
+  let s = (aa + bb + cc) / 2;
+  let AreaOfTriangle = Math.sqrt(s * (s - aa) * (s - bb) * (s - cc));
+  document.getElementById(
+    "result2"
+  ).innerText = `aria triangle of ${aa} , ${bb} and ${cc} is ${AreaOfTriangle}`;
+}
 
-let base = prompt('enter base value')
-let height = prompt('enter height value')
-
-let AreaOfTriangle = (base*height)/2
-
-console.log(AreaOfTriangle)
-
-
-let a = 50
-let b = 34 
-let c = 45
-
-let s = (a+b+c)/2
-
-let area = Math.sqrt(s*(s-a)*(s-b)*(s-c))
-console.log(area)
+const btnTriangle = document.getElementById("print_area_triangle");
+btnTriangle.addEventListener("click", () => {
+  ariaTriangle();
+});

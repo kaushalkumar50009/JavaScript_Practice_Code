@@ -1,46 +1,39 @@
-console.log("check if number is odd or even")
+console.log("check if number is odd or even");
 
-//checking using if else
-// function OddEven(){
-//    let value = document.getElementById("data").value
+// checking using if else
+// function OddEven() {
+//   let value = document.getElementById("OddEven").value;
 
-//     if (value % 2 == 0){
-        
-//         result = `your number ${value} is even`
-
-//     }
-//     else{
-//         result = `your number ${value} is odd`
-//     }
-//     document.getElementById("result").innerText = `${result}`
-
+//   if (value % 2 == 0) {
+//     result = `your number ${value} is even`;
+//   } else {
+//     result = `your number ${value} is odd`;
+//   }
+//   document.getElementById("OddEvenresult").innerText = `${result}`;
 // }
 
-
-//checking using ternary operator
-// function OddEven(){
-//    let value = document.getElementById("data").value
-//     result = value % 2 == 0 ? `your number ${value} is even` : `your number ${value} is odd`
-//     document.getElementById("result").innerText = `${result}`
-
-// }
-
+// checking using ternary operator
+function OddEven() {
+  let value = document.getElementById("OddEven").value;
+  result =
+    value % 2 == 0
+      ? `your number ${value} is even`
+      : `your number ${value} is odd`;
+  document.getElementById("OddEvenresult").innerText = `${result}`;
+}
 
 // {
-// function OddEven() {
-//     let value =20
+//   function OddEven() {
+//     let value = 20;
 //     value = parseInt(value);
-//     for (var i = 1; i <= 3; i = i + 1){
-//         value = value + 2;
-//         document.write(value+ "<br>")
+//     for (var i = 1; i <= 3; i = i + 1) {
+//       value = value + 2;
+//       document.write(value + "<br>");
 //     }
+//   }
 
+//   OddEven();
 // }
-
-// OddEven()
-// }
-
-
 
 // let value = 11
 // for (var i = 1; i <= 3; i = i + 1){
@@ -54,9 +47,6 @@ console.log("check if number is odd or even")
 //     }
 
 // }
-
-
-
 
 // function OddEven(){
 
@@ -76,26 +66,23 @@ console.log("check if number is odd or even")
 //         }
 
 //     }
-        
+
 // }
 
-
-
-function OddEven(){
-    let value = document.getElementById("data").value
-    value = parseInt(value);
-    for ( let i = 1; i <= 3; i = i + 1){
-        if(value <= 0){
-            document.getElementById('result').innerHTML = `please enter positive no`
-        } 
-        else if (value % 2 == 0) {
-                value = value +2
-                document.getElementById('result').innerHTML += `${value} <br>`
-            }
-        else{
-            value = value +2
-            document.getElementById('result').innerHTML +=  `${value}  <br>`
-        }
-    }    
-    
-}
+// function OddEven() {
+//   let value = document.getElementById("OddEven").value;
+//   value = parseInt(value);
+//   for (let i = 1; i <= 3; i = i + 1) {
+//     if (value <= 0) {
+//       document.getElementById(
+//         "OddEvenresult"
+//       ).innerHTML = `please enter positive no`;
+//     } else if (value % 2 == 0) {
+//       value = value + 2;
+//       document.getElementById("OddEvenresult").innerHTML += `${value} <br>`;
+//     } else {
+//       value = value + 2;
+//       document.getElementById("OddEvenresult").innerHTML += `${value}  <br>`;
+//     }
+//   }
+// }
