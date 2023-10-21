@@ -1,4 +1,4 @@
-# JavaScript_Practice_Code
+# https://java-script-practices.vercel.app/
 
 # Square Root Calculator
 
