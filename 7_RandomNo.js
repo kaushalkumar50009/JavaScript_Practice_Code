@@ -6,7 +6,5 @@ function genrandom() {
   let x = Math.random();
   x *= 100;
   x = Math.floor(x);
-  document.getElementById(
-    "randomresult"
-  ).innerText = `${x} this is your random value`;
+  document.getElementById("randomresult").innerText = `${x} your random value`;
 }

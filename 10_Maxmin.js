@@ -10,18 +10,21 @@ console.log("finding max and min value using user input and math.max");
 // maxno = value.reduce((a, b) => Math.max(a, b), -Infinity);
 
 function check() {
-  const input1 = document.getElementById("firstno").value;
-  const input2 = document.getElementById("secondno").value;
-  const input3 = document.getElementById("thirdno").value;
-  if (input1 >= input2 && input1 >= input3) {
-    result = input1;
-  } else if (input2 >= input1 && input2 >= input3) {
-    result = input2;
+  const input1 = Number(document.getElementById("firstno").value);
+  const input2 = Number(document.getElementById("secondno").value);
+  const input3 = Number(document.getElementById("thirdno").value);
+
+  let maxresult; // Declare maxresult with let
+
+  if (input1 > input2 && input1 > input3) {
+    maxresult = input1;
+  } else if (input2 > input1 && input2 > input3) {
+    maxresult = input2;
   } else {
-    result = input3;
+    maxresult = input3;
   }
 
-  document.getElementById("max").innerText = `maximum value is ${result}`;
+  document.getElementById("max").innerText = `maximum value is ${maxresult}`;
 }
 
 // let a = prompt("enter value")

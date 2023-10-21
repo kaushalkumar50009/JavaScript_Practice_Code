@@ -6,21 +6,18 @@ console.log("check number is positive, negative or 0");
 //   document.getElementById("result").innerText = `this number is ${result} `;
 // }
 
-function check() {
+function PosOrNeg() {
   let value = document.getElementById("PosOrNeg").value;
 
   if (value > 0) {
-    result = "positive number";
+    rsult = `( ${value} ) is positive `;
   } else if (value == 0) {
-    result = "zero value";
+    rsult = `( ${value} ) not negative and not positive `;
   } else if (value <= -1) {
-    result = `negative value
-          ( ${value} ) `;
+    rsult = `( ${value} ) is negative `;
   } else {
-    result = "this value is not a number";
+    rsult = `( ${value} ) not a number`;
   }
 
-  document.getElementById(
-    "PosorNegResult"
-  ).innerText = `this number is ${result} `;
+  document.getElementById("PosorNegResult").innerText = ` ${rsult} number`;
 }

@@ -4,6 +4,8 @@ let count = 0;
 let vowelsCounter1 = () => {
   inputWords = document.getElementById("vowelsCounter").value;
   let conlow = inputWords.toLowerCase();
+  let vowels = ["a", "e", "i", "o", "u"];
+  let count = 0;
   for (let i = 0; i < inputWords.length; i++) {
     if (vowels.includes(conlow[i])) {
       console.log(inputWords[i]);
@@ -13,6 +15,8 @@ let vowelsCounter1 = () => {
   document.getElementById("vowelsCounterresult1").innerText = count;
   //   console.log(count);
 };
+
+// ! more examples
 
 // let conv = () => {
 //   let vowelsInInput = [];

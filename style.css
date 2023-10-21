@@ -1,0 +1,94 @@
+/* General styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url("./air-494020_1280.jpg");
+}
+
+.container {
+  background-color: #00ff640a;
+  height: auto;
+  width: auto;
+}
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  border: 2px solid #e6e6e6;
+  color: white;
+  gap: 24px;
+  background-color: #0000;
+  backdrop-filter: blur(3px);
+  width: 50vw;
+  margin: auto;
+  border-radius: 33px;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  border-block-start-style: hidden;
+  border-block-end-style: solid;
+  border-inline-color: cornflowerblue;
+  padding: 10px;
+  min-width: fit-content;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+/* .square_root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  border: 2px solid #e6e6e6;
+  color: white;
+  gap: 24px;
+  background-color: #0000;
+  backdrop-filter: blur(3px);
+  width: 50vw;
+  margin: auto;
+  border-radius: 33px;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  border-block-start-style: hidden;
+  border-block-end-style: hidden;
+  border-inline-color: cornflowerblue;
+  padding: 10px;
+  min-width: fit-content;
+} */
+
+input {
+  padding: 5px;
+  border-radius: 6px;
+  outline: transparent;
+  border: none;
+  width: 20rem;
+  height: 41px;
+  font-size: 18px;
+}
+button {
+  background-color: #4caf501f;
+  border: 2px solid #9bbdff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease-in-out;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #9bbdff45;
+  backdrop-filter: blur(9px);
+}
+
+#converted_result {
+  text-transform: none;
+}
