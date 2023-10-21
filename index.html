@@ -15,7 +15,7 @@
     <input type="number" id="square_root">
     <button id="print_sq_root">squareRoot</button>
     <p id="result"></p>
-    <script src="./3_SquareRoot.js"></script>
+    <script src="./1_SquareRoot.js"></script>
   </div>
 
   <!-- !2thAreaTriangle -->
@@ -29,7 +29,7 @@
     <input type="number" id="c" placeholder="c">
     <p id="result2"></p>
     <button id="print_area_triangle">area_triangle</button>
-    <script src="./4thAreaTriangle.js"></script>
+    <script src="./2_AreaTriangle.js"></script>
   </div>
 
   <!-- !3thSwapNumber -->
@@ -42,7 +42,7 @@
     <input type="number" id="swap_d" placeholder="d">
     <p id="swap_result2"></p>
     <button id="swap_number">swapNumber</button>
-    <script src="./5thSwapNumber.js"></script>
+    <script src="./3_SwapNumber.js"></script>
   </div>
 
   <!-- !4kilometers  -->
@@ -53,7 +53,7 @@
       Convert
     </button> miles
     <h3 id="res"></h3>
-    <script src="./6thKmtoMiles.js"></script>
+    <script src="./4_KmtoMiles.js"></script>
   </div>
   <!-- !5thCelsToFar -->
   <div class="">
@@ -62,9 +62,9 @@
       Convert
     </button> Fahrenheit
     <h4 id="print"> </h4>
-    <script src="./7thCelsToFar.js"></script>
+    <script src="./5_CelsToFar.js"></script>
   </div>
-  <!-- !6CheckPosorNeg -->
+  <!-- !6Check Positive or Negative -->
   <div class="">
     <p>
       positive or negative
@@ -74,7 +74,7 @@
       Check
     </button>
     <h4 id="PosorNegResult"> </h4>
-    <script src="./8thCheckNumb.js"></script>
+    <script src="./6_positiveOrNegative.js"></script>
   </div>
   <!-- !generate random number -->
   <div class="">
@@ -83,7 +83,7 @@
       random number
     </button>
     <h4 id="randomresult"> </h4>
-    <script src="./9thRandomNo.js"></script>
+    <script src="./7_RandomNo.js"></script>
   </div>
   <!-- !even or odd -->
   <div class="">
@@ -91,7 +91,7 @@
     <input type="number" name=" " id="OddEven">
     <input type="submit" onclick="OddEven()">
     <h4 id="OddEvenresult"> </h4>
-    <script src="./10thOddEven.js"></script>
+    <script src="./8_OddEven.js"></script>
 
   </div>
 
@@ -103,7 +103,7 @@
       Check
     </button>
     <h4 id="primeresult"> </h4>
-    <script src="./11thPrimeNo.js"></script>
+    <script src="./9_PrimeNo.js"></script>
   </div>
   <!-- !find maximum -->
   <div class="">
@@ -117,34 +117,120 @@
       <button onclick="check()">maximum using if else</button>
       <p class="maxresult" id="max"></p>
     </div>
-    <script src="./12thMaxmin.js"></script>
+    <script src="./10_Maxmin.js"></script>
   </div>
-
+  <!-- !palindromeChecker -->
   <div class="">
     <p>palindromeChecker</p>
-    <script src="./palindromeChecker.js"></script>
+    <div class="">
+      <p>using for loop</p>
+      <input type="text" name="" value="" placeholder="enter word" id="palindromeword">
+      <p id="palindromeresult1"></p>
+      <button onclick="palindromeforloop()">check palindrome for loop</button>
+    </div>
+    <div class="">
+      <p id="palindromeresult2"></p>
+      <button onclick="optimisedforloop()">check optimised for loop</button>
+    </div>
+    <div class="">
+      <p id="palindromeresult3"></p>
+      <button onclick="usingifelse()">check if else</button>
+    </div>
+    <script src="./11_palindromeChecker.js"></script>
   </div>
-  <!-- <script src="./countVowels.js"></script> -->
 
-
-  <!-- 
-  <div class="click_copy">
-    <input type="text" id="text">
-    <button class="copy" id="copy">copy</button>
-  </div> 
-<script src="./clickCopy.js"></script>
--->
-
-  <!-- <div class="input_count">
-    <input type="text" id="input">
-    <div class="count" id="count">0</div>
+  <!-- !vowel counter -->
+  <div class="">
+    <p>vowel counter</p>
+    <input type="text" name="" value="" placeholder="enter word" id="vowelsCounter">
+    <div class="">
+      <p id="vowels"></p>
+      <p id="vowelsCounterresult1"></p>
+      <button onclick="vowelsCounter1()">vowel counter </button>
+    </div>
+    <script src="./12_countVowels.js"></script>
   </div>
-  <script src="./inputCount.js"></script> -->
 
+  <!-- !copy to clipboard -->
+  <div class="">
+    <p>copy to clipboard </p>
+    <div class="click_copy">
+      <input type="text" id="text">
+      <button class="copy" id="copy">copy</button>
 
+    </div>
+    <script src="./13_clickCopy.js"></script>
 
+  </div>
 
+  <!-- ! count input value -->
+  <div class="input_count">
+    <p>count input value</p>
+    <input type="text" id="input_count">
+    <div class="count" id="countvalue">0</div>
+    <script src="./14_inputCount.js"></script>
+  </div>
 
+  <!-- !convert first letter to capital letter -->
+  <div class="capital letter">
+    <p>convert first letter to capital letter</p>
+    <input type="text" id="input_word">
+    <p id="converted_result"></p>
+    <button class="copy" id="uppercase">convert to uppercase</button>
+    <script src="./15_upperCaseFirLett.js"></script>
+  </div>
+
+  <!-- !using Set (union and intersection) -->
+  <div class="">
+    <p>using Set (union and intersection) see result in console</p>
+    <p class="actualValue"></p>
+    <p id="unionResult1"></p>
+    <p id="unionResult2"></p>
+    <p id="unionResult3"></p>
+    <button class="unionIntersection" onclick="showResult()">show result</button>
+    <script src="./16_unionAndIntersection.js"></script>
+  </div>
+
+  <!-- !sum of array -->
+  <div class="">
+    <p>sum of array see result in console</p>
+    <script src="./17_sumOffArray.js"></script>
+  </div>
+
+  <!-- ! print the word based on letter startWith and endWith -->
+  <div class="">
+    <p class="">
+      print the word based on letter startWith and endWith
+    </p>
+    <input type="text" id="startWith">
+    <input type="text" id="endWith">
+    <button class="findStartEnd" onclick="findStartEnd()">find start end with</button>
+    <p id="startwith"></p>
+    <script src="./18_startEndWithCertainCharacters.js"></script>
+  </div>
+  <!-- ! Occurrence of characters-->
+  <div class="">
+    <div class="">
+      <p class="">Occurrence of characters</p>
+      <input type="text" id="character_inputs" placeholder="enter your characters">
+      <input type="text" id="letter_inputs" placeholder="enter letter you want to find">
+      <p class="occurrence_result" id="occurrence_result"></p>
+      <button id="findOccurance" onclick="occurancess()">Find</button>
+    </div>
+    <script src="./19_occuranceOfCharacter.js"></script>
+  </div>
+
+  <!-- !compare array elements -->
+  <!-- <script src="./compareArrayElement.js"></script>
+  <script src="./factor.js"></script>
+  <script src="./factorial.js"></script>
+  <script src="./fibonacciSwquence.js"></script>
+  <script src="./findAndFilter.js"></script>
+  <script src="./findDuplicatesArray.js"></script>
+  <script src="./findMaxMin.js"></script>
+  <script src="./findMissingValue.js"></script>
+  <script src="./findSecondLargest.js"></script>
+  <script src="./sameLastDigit.js"></script> -->
 
 
 </body>
